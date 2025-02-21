@@ -1,10 +1,10 @@
-import NextHead from "next/head"; // Change import name
+import Head from "next/head";
 
 const Seo = ({ pageTitle, font }) => {
     const title = pageTitle ? `${pageTitle} | Ecommerce` : "Ecommerce";
 
     return (
-        <NextHead>
+        <Head>
             <title>{title}</title>
             <meta httpEquiv="x-ua-compatible" content="ie=edge" />
             <meta name="keywords" content="Ecommerce Website" />
@@ -16,7 +16,7 @@ const Seo = ({ pageTitle, font }) => {
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
                 <script type="text/javascript"
                     src="https://cdn.jsdelivr.net/gh/aayushchouhan24/sheryjs@main/dist/Shery.js"></script> */}
-        </NextHead>
+        </Head>
     );
 };
 
