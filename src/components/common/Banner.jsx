@@ -2,6 +2,7 @@ import React from 'react'
 import { Zoom } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
 import { motion } from "framer-motion"
+import Image from 'next/image'
 
 const Banner = () => {
     const images = [

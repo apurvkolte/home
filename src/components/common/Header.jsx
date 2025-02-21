@@ -1,6 +1,8 @@
 import React from 'react'
 import { PiShoppingCart } from "react-icons/pi";
 import { LiaUser } from "react-icons/lia";
+import Image from 'next/image'
+
 
 const Header = () => {
     const menu = [

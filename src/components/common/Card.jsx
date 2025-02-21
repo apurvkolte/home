@@ -1,5 +1,7 @@
 import React from 'react';
 import { PiShoppingCart } from "react-icons/pi";
+import Image from 'next/image'
+
 
 const Card = ({ product, border = 0 }) => {
     return (

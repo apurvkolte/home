@@ -1,6 +1,7 @@
 import React from 'react';
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaYoutube, FaWhatsapp } from "react-icons/fa";
 import { GoArrowUp } from "react-icons/go";
+import Image from 'next/image'
 
 const Footer = () => {
     const onTop = () => {
