@@ -15,7 +15,7 @@ const Footer = () => {
             <div className='w-full px-10 py-10 lg:px-20 flex flex-col lg:flex-row gap-20 sm:gap-52'>
 
                 <div className='flex flex-col items-center lg:items-start gap-5 w-full lg:w-1/4'>
-                    <img
+                    <Image
                         src="/logo.png"
                         alt="Logo"
                         className="w-40 h-auto object-contain"
@@ -75,7 +75,7 @@ const Footer = () => {
 
             <div className='text-center mb-0 flex-row sm:flex justify-between p-3 sm:p-0 items-center max-w-screen-md mx-auto text-gray-400 text-sm mt-8'>
                 <div> © {new Date().getFullYear()} design & developed by <span className='text-white font-semibold hover:text-slate-300'>Apurv Kolte.</span>  All rights reserved.</div>
-                <img className='mt-5 sm:mt-0' src="/payments.png" alt="" />
+                <Image className='mt-5 sm:mt-0' src="/payments.png" alt="" />
             </div>
 
             <button onClick={onTop} className='absolute bottom-5 right-8 p-5 rounded-full bg-zinc-200 text-black hover:bg-white flex justify-end items-end d-500'><GoArrowUp /></button>

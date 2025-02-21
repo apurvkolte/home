@@ -17,7 +17,7 @@ const Header = () => {
     return (
         <div className='w-full h-20 mx-auto flex justify-between items-center px-4 sm:px-20 gap-4 border-b-2 '>
             <div className='logo w-40 h-16 flex items-center justify-center'>
-                <img
+                <Image
                     src="/logo.png"
                     alt="Logo"
                     layout="fill"
