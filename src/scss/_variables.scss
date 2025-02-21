@@ -1,0 +1,17 @@
+@use "sass:math";
+
+
+//scroll
+
+// SCSS to style the scrollbar
+$scrollbar-thumb-color: #C1C1C1; //#3498db Color for the thumb (the draggable part)
+$scrollbar-track-color: #F1F1F1; // Color for the track (the area the thumb moves within)
+$scrollbar-width: 10px; // Width of the scrollbar
+
+//text selection
+$selection-bg-color: #db3450;
+$selection-text-color: white;
+
+//button color
+$button-bg-color: #db3450;
+$button-text-color-hover: #db3450d8;
