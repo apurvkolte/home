@@ -61,11 +61,11 @@ const Header = () => {
                     <div className="absolute inset-x-0 top-full h-[28px] bg-transparent group-hover:block"></div>
                     <div className='absolute z-40 w-[50rem] hidden group-hover:flex  group-hover:pointer-events-auto flex-col flex-wrap h-[25rem] left-0 top-[52px] bg-zinc-50 bg-opacity-100 shadow-lg opacity-0 group-hover:opacity-100 group-hover:visible transition-all duration-300'>
                         {menu.map((item, index) => (
-                            <div className='flex flex-col w-1/4 justify-between gap-3 items-start p-7' >
+                            <div key={index} className='flex flex-col w-1/4 justify-between gap-3 items-start p-7' >
                                 <h3 className='text-sm font-medium capitalize  '>{item.title}</h3>
                                 <ul className=''>
                                     {item.category.map((cat, i) => (
-                                        <li className='mb-2 text-sm capitalize hover:font-medium hover:opacity-[0.8]'>
+                                        <li key={i} className='mb-2 text-sm capitalize hover:font-medium hover:opacity-[0.8]'>
                                             <a href={cat}>
                                                 {cat}
                                             </a>
@@ -87,11 +87,11 @@ const Header = () => {
                     <div className="absolute inset-x-0 top-full h-[28px] bg-transparent group-hover:block"></div>
                     <div className='absolute z-40 w-[50rem] hidden group-hover:flex  group-hover:pointer-events-auto flex-col flex-wrap h-[25rem] left-0 top-[52px] bg-zinc-50 bg-opacity-100 shadow-lg opacity-0 group-hover:opacity-100 group-hover:visible transition-all duration-300'>
                         {menu.map((item, index) => (
-                            <div className='flex flex-col w-1/4 justify-between gap-3 items-start p-7' >
+                            <div key={index} className='flex flex-col w-1/4 justify-between gap-3 items-start p-7' >
                                 <h3 className='text-sm font-medium capitalize  '>{item.title}</h3>
                                 <ul className=''>
                                     {item.category.map((cat, i) => (
-                                        <li className='mb-2 text-sm capitalize hover:font-medium hover:opacity-[0.8]'>
+                                        <li key={i} className='mb-2 text-sm capitalize hover:font-medium hover:opacity-[0.8]'>
                                             <a href={cat}>
                                                 {cat}
                                             </a>
@@ -114,11 +114,11 @@ const Header = () => {
                     <div className="absolute inset-x-0 top-full h-[28px] bg-transparent group-hover:block"></div>
                     <div className='absolute z-40 w-[50rem] hidden group-hover:flex  group-hover:pointer-events-auto flex-col flex-wrap h-[25rem] left-0 top-[52px] bg-zinc-50 bg-opacity-100 shadow-lg opacity-0 group-hover:opacity-100 group-hover:visible transition-all duration-300'>
                         {menu.map((item, index) => (
-                            <div className='flex flex-col w-1/4 justify-between gap-3 items-start p-7' >
+                            <div key={index} className='flex flex-col w-1/4 justify-between gap-3 items-start p-7' >
                                 <h3 className='text-sm font-medium capitalize  '>{item.title}</h3>
                                 <ul className=''>
                                     {item.category.map((cat, i) => (
-                                        <li className='mb-2 text-sm capitalize hover:font-medium hover:opacity-[0.8]'>
+                                        <li key={i} className='mb-2 text-sm capitalize hover:font-medium hover:opacity-[0.8]'>
                                             <a href={cat}>
                                                 {cat}
                                             </a>
@@ -139,11 +139,11 @@ const Header = () => {
                     <div className="absolute inset-x-0 top-full h-[28px] bg-transparent group-hover:block"></div>
                     <div className='absolute z-40 w-[50rem] hidden group-hover:flex  group-hover:pointer-events-auto flex-col flex-wrap h-[25rem] left-0 top-[52px] bg-zinc-50 bg-opacity-100 shadow-lg opacity-0 group-hover:opacity-100 group-hover:visible transition-all duration-300'>
                         {menu.map((item, index) => (
-                            <div className='flex flex-col w-1/4 justify-between gap-3 items-start p-7' >
+                            <div key={index} className='flex flex-col w-1/4 justify-between gap-3 items-start p-7' >
                                 <h3 className='text-sm font-medium capitalize  '>{item.title}</h3>
                                 <ul className=''>
                                     {item.category.map((cat, i) => (
-                                        <li className='mb-2 text-sm capitalize hover:font-medium hover:opacity-[0.8]'>
+                                        <li key={i} className='mb-2 text-sm capitalize hover:font-medium hover:opacity-[0.8]'>
                                             <a href={cat}>
                                                 {cat}
                                             </a>
@@ -165,11 +165,11 @@ const Header = () => {
                     <div className="absolute inset-x-0 top-full h-[28px] bg-transparent group-hover:block"></div>
                     <div className='absolute z-40 w-[50rem] hidden group-hover:flex  group-hover:pointer-events-auto flex-col flex-wrap h-[25rem] left-0 top-[52px] bg-zinc-50 bg-opacity-100 shadow-lg opacity-0 group-hover:opacity-100 group-hover:visible transition-all duration-300'>
                         {menu.map((item, index) => (
-                            <div className='flex flex-col w-1/4 justify-between gap-3 items-start p-7' >
+                            <div key={index} className='flex flex-col w-1/4 justify-between gap-3 items-start p-7' >
                                 <h3 className='text-sm font-medium capitalize  '>{item.title}</h3>
                                 <ul className=''>
                                     {item.category.map((cat, i) => (
-                                        <li className='mb-2 text-sm capitalize hover:font-medium hover:opacity-[0.8]'>
+                                        <li key={i} className='mb-2 text-sm capitalize hover:font-medium hover:opacity-[0.8]'>
                                             <a href={cat}>
                                                 {cat}
                                             </a>
