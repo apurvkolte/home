@@ -32,5 +32,16 @@
   "description": "This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
   "main": "next.config.js",
   "author": "Apurv V. Kolte",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apurvkolte/shop.git"
+  },
+  "keywords": [
+    "E-commerce"
+  ],
+  "bugs": {
+    "url": "https://github.com/apurvkolte/shop/issues"
+  },
+  "homepage": "https://github.com/apurvkolte/shop#readme"
 }
