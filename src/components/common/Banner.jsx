@@ -2,7 +2,6 @@ import React from 'react'
 import { Zoom } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
 import { motion } from "framer-motion"
-import Image from 'next/image'
 
 const Banner = () => {
     const images = [
@@ -17,7 +16,7 @@ const Banner = () => {
             >
                 {images.map((each, index) => (
                     <div key={index} style={{ width: "100%" }}>
-                        <Image className='w-full h-[32rem] object-cover overflow-hidden relative' style={{ objectFit: "cover", width: "100%" }} alt="Slide Image" src={each} />
+                        <img className='w-full h-[32rem] object-cover overflow-hidden relative' style={{ objectFit: "cover", width: "100%" }} alt="Slide Image" src={each} />
                         <div className="absolute inset-0 bg-black bg-opacity-20"></div>
                         {/* <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-transparent"></div> */}
 
