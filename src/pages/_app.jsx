@@ -13,7 +13,7 @@ const _app = () => {
 
     return (
         <div className='w-full h-screen scroll-smooth'>
-            <Seo pageTitle="Home Page" />
+            <Seo pageTitle="Ecommerce Website by Apurv Kolte" />
             <Header />
             <Banner />
             {/* <AnimatedCursor /> */}
