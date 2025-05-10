@@ -6,12 +6,11 @@ import ProductSpecifications from './ProductSpecifications';
 import RelatedProducts from '@/components/common/RelatedProducts';
 import ProductDetailsWithTabs from './ProductDetailsWithTabs';
 import { useRouter } from 'next/router';
-import ReactImageMagnify from 'react-image-magnify';
 import { useCart } from '../../contexts/cart/cartContext';
 import { addItemToCart } from '../../contexts/cart/cartReducer';
 import { products } from '@/data/products';
 import productsData from '@/data/productsData';
-
+import MovableZoomImage from './MovableZoomImage1';
 
 const ProductDetails1 = () => {
     const router = useRouter();
@@ -73,27 +72,9 @@ const ProductDetails1 = () => {
                                 ))}
                         </div>
                         {/* Right Section: Main Image with Zoom */}
-                        <div className=' w-full h-screen p-2'>
-                            <div className='w-full h-[66vh] object-cover object-center'>
-                                <ReactImageMagnify
-                                    {...{
-                                        smallImage: {
-                                            alt: "Main Product Image",
-                                            src: mainImage,
-                                            width: 800,
-                                            height: 550,
-                                            isFluidWidth: false,
-                                        },
-                                        largeImage: {
-                                            src: mainImage,
-                                            isFluidWidth: true,
-                                            width: 900,
-                                            height: 800,
-                                        },
-                                        enlargedImagePosition: "over",
-                                        lensStyle: { backgroundColor: "rgba(0,0,0,0.2)" },
-                                    }}
-                                />
+                        <div className=' w-full h-screen'>
+                            <div className='w-full border object-cover object-center'>
+                                <MovableZoomImage mainImage={mainImage} />
                             </div>
 
                         </div>
@@ -140,8 +121,8 @@ const ProductDetails1 = () => {
 
                             </div>
                             <div className="mt-4 flex items-center space-x-2">
-                                <span className="text-3xl font-bold text-green-600">₹{product.price}</span>
-                                <span className="text-sm text-gray-400 line-through">₹{product.originalPrice}</span>
+                                <span className="text-3xl font-bold text-green-600">${product.price}</span>
+                                <span className="text-sm text-gray-400 line-through">${product.originalPrice}</span>
                                 <span className="text-sm text-red-500">({product.discount}% OFF)</span>
                             </div>
 

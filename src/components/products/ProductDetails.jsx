@@ -8,9 +8,9 @@ import ProductSpecifications from './ProductSpecifications';
 import RelatedProducts from '@/components/common/RelatedProducts';
 import { useRouter } from 'next/router';
 import { products } from '@/data/products';
-import ReactImageMagnify from 'react-image-magnify';
 import { useCart } from '../../contexts/cart/cartContext';
 import { addItemToCart } from '../../contexts/cart/cartReducer';
+import MovableZoomImage from './MovableZoomImage';
 
 
 const ProductDetails = () => {
@@ -113,9 +113,9 @@ const ProductDetails = () => {
     return (
         <div className=''>
             {product && <div className='flex flex-col sm:flex-row  justify-between max-w-screen-xl w-full mx-auto sm:h-screen py-20'>
-                <div className="hidden sm:flex image w-full justify-between py-10 px-5">
+                <div className="hidden sm:flex image w-full justify-around  py-10  ">
                     {/* Left Section: Thumbnails */}
-                    <div className="thumbnail w-1/6 flex flex-col justify-start items-center gap-2 p-2">
+                    <div className="thumbnail w-24 flex flex-col justify-start items-center  gap-2 p-2">
                         {[product.image, product.image1, product.image2]
                             .filter(Boolean) // Remove undefined or null images
                             .map((img, i) => (
@@ -133,29 +133,8 @@ const ProductDetails = () => {
                             ))}
                     </div>
                     {/* Right Section: Main Image with Zoom */}
-                    <div className="left_2Zoom flex items-center justify-center w-3/4">
-                        <ReactImageMagnify
-                            {...{
-                                smallImage: {
-                                    alt: "Main Product Image",
-                                    src: mainImage,
-                                    width: 500,
-                                    height: 500,
-                                    sizes: "(max-width: 480px) 100vw, (max-width: 1200px) 50vw, 400px",
-                                },
-                                largeImage: {
-                                    src: mainImage,
-                                    isFluidWidth: true,
-                                    width: 900,
-                                    height: 900,
-                                },
-                                enlargedImageContainerDimensions: {
-                                    width: "130%",
-                                    height: "110%",
-                                },
-                                enlargedImageContainerStyle: { background: "#fff", zIndex: 10 },
-                            }}
-                        />
+                    <div className="left_2Zoom flex items-center justify-center w-full px-4">
+                        <MovableZoomImage mainImage={mainImage} />
                     </div>
                 </div>
                 <div className="sm:hidden image w-full flex flex-col py-5 px-3 gap-5">
@@ -187,7 +166,6 @@ const ProductDetails = () => {
                     </div>
                 </div>
 
-
                 <div className='productData relative z-0 w-full py-10 px-10 sm:h-[100vh] sm:overflow-auto scrollbar-hide scroll-smooth '>
                     <div className="mt-4">
                         <h1 className="text-2xl font-semibold text-zinc-600 tracking-tight">{product.name}</h1>
@@ -202,8 +180,8 @@ const ProductDetails = () => {
                     <div className="flex justify-start items-start gap-10 ">
                         <div>
                             <div className="mt-2 flex items-center space-x-2">
-                                <span className="text-2xl font-bold text-green-600">₹{product.price}</span>
-                                <span className="text-sm text-gray-400 line-through">₹{product.originalPrice}</span>
+                                <span className="text-2xl font-bold text-green-600">${product.price}</span>
+                                <span className="text-sm text-gray-400 line-through">${product.originalPrice}</span>
                                 <span className="text-sm text-red-500 font-medium">({product.discount}% OFF)</span>
                             </div>
 

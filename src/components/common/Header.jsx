@@ -26,7 +26,7 @@ const Header = () => {
         <div className='w-full h-20 mx-auto flex justify-between items-center px-4 sm:px-20 gap-4 border-b-2 fixed top-0 bg-white z-50'>
 
             <div className="logo w-40 sm:w-48 md:w-56 h-16 sm:h-20 md:h-24 flex items-center justify-center">
-                <Link href="/" passHref legacyBehavior>
+                <Link href="/">
                     <a>
                         <img
                             src="/logo.png"
@@ -224,42 +224,42 @@ const Header = () => {
                         <div className='flex flex-col justify-between gap-3 items-start p-7'>
                             <ul className=''>
                                 <li className='mb-2 text-sm capitalize hover:font-medium hover:opacity-[1] opacity-[0.8]'>
-                                    <Link href="/dashboard" passHref legacyBehavior>
+                                    <Link href="/dashboard">
                                         <a className='cursor-pointer'>
-                                            <h3 className='text-sm font-medium capitalize'>Dashboard</h3>
+                                            <h3 className='text-sm font-medium cursor-pointer capitalize'>Dashboard</h3>
                                         </a>
                                     </Link>
                                 </li>
                                 <li className='mb-2 text-sm capitalize hover:font-medium hover:opacity-[1] opacity-[0.8]'>
-                                    <Link href="/cart" passHref legacyBehavior>
+                                    <Link href="/cart">
                                         <a className='cursor-pointer'>
                                             <h3 className='text-sm font-medium capitalize'>Cart</h3>
                                         </a>
                                     </Link>
                                 </li>
                                 <li className='mb-2 text-sm capitalize hover:font-medium hover:opacity-[1] opacity-[0.8]'>
-                                    <Link href='/watchlist' passHref legacyBehavior>
+                                    <Link href='/watchlist'>
                                         <a className='cursor-pointer'>
                                             <h3 className='text-sm font-medium capitalize'> Watch List</h3>
                                         </a>
                                     </Link>
                                 </li>
                                 <li className='mb-2 text-sm capitalize hover:font-medium hover:opacity-[1] opacity-[0.8]'>
-                                    <Link href="/compare" passHref legacyBehavior>
+                                    <Link href="/compare">
                                         <a className='cursor-pointer'>
                                             <h3 className='text-sm font-medium capitalize'>Compare Products</h3>
                                         </a>
                                     </Link>
                                 </li>
                                 <li className='mb-2 text-sm capitalize hover:font-medium hover:opacity-[1] opacity-[0.8]'>
-                                    <Link href='/dashboard' passHref legacyBehavior>
+                                    <Link href='/dashboard'>
                                         <a className='cursor-pointer'>
                                             <h3 className='text-sm font-medium capitalize'>Account</h3>
                                         </a>
                                     </Link>
                                 </li>
                                 <li className='mb-2 text-sm capitalize hover:font-medium hover:opacity-[1] opacity-[0.8]'>
-                                    <Link href='/shipping-address' passHref legacyBehavior>
+                                    <Link href='/shipping-address'>
                                         <a className='cursor-pointer' >
                                             <h3 className='text-sm font-medium capitalize'>Shipping Address</h3>
                                         </a>
@@ -301,7 +301,7 @@ const Header = () => {
 
 
                 <div className='relative group '>
-                    <Link href='/about-us' passHref legacyBehavior>
+                    <Link href='/about-us'>
                         <a className='uppercase font-medium text-zinc-700 hover:text-zinc-900 text-sm tracking-wide leading-none cursor-pointer'>
                             About
                             <span className="absolute left-0 -bottom-1 w-0 h-[2.5px] bg-green-500 transition-all duration-300 group-hover:w-full"></span>
@@ -310,7 +310,7 @@ const Header = () => {
                     </Link>
                 </div>
                 <div className='relative group'>
-                    <Link href="/contact-us" passHref legacyBehavior>
+                    <Link href="/contact-us">
                         <a className='uppercase font-medium text-zinc-700 hover:text-zinc-900 text-sm tracking-wide leading-none cursor-pointer'>
                             Contact
                             <span className="absolute left-0 -bottom-1 w-0 h-[2.5px] bg-green-500 transition-all duration-300 group-hover:w-full"></span>
@@ -344,7 +344,7 @@ const Header = () => {
                             <i className="ri-close-line text-xl"></i>
                         </button>
                     )}
-                    <Link href='/products' passHref legacyBehavior>
+                    <Link href='/products'>
                         <div className='search-icon w-10 h-full text-zinc-500 hover:bg-slate-200 hover:text-zinc-600 flex justify-center items-center cursor-pointer rounded'>
                             <i className="ri-search-line text-xl"></i>
                         </div>
@@ -354,8 +354,9 @@ const Header = () => {
                     <div className='search-results bg-white border border-slate-200 mt-2 rounded shadow-md max-h-[15rem] overflow-y-auto absolute w-full z-10'>
                         <ul className='divide-y divide-slate-200'>
                             {filteredResults.slice(0, 12).map((result, index) => (
-                                <Link key={index} href={`/product-details/${result.id}`} passHref legacyBehavior>
+                                <Link key={index} href={`/product-details/${result.id}`}>
                                     <li
+
                                         className='p-3 hover:bg-slate-100 cursor-pointer text-sm'
                                     >
                                         {result.name}
@@ -390,7 +391,7 @@ const Header = () => {
                     </Link>
                 </div>
                 <div className="relative flex items-center sm:mt-3">
-                    <Link href="/cart" passHref legacyBehavior>
+                    <Link href="/cart">
                         <PiShoppingCart className="text-xl  text-zinc-600 cursor-pointer " />
                     </Link>
                     <span className="absolute top-[-15px] right-[-15px] flex items-center justify-center w-[20px] h-[20px] rounded-full bg-zinc-900 text-white text-xs font-bold">
@@ -415,7 +416,7 @@ const Header = () => {
                             <Link href="/login" >
                                 <li className="block hover:bg-zinc-100 hover:border-2 cursor-pointer p-2 w-full">Login</li>
                             </Link>
-                            <Link href="/shipping-address">
+                            <Link href="/shipping-address" >
                                 <li className="block hover:bg-zinc-100 hover:border-2 cursor-pointer p-2 w-full">Shipping Address</li>
                             </Link>
                         </ul >

@@ -8,7 +8,7 @@ import ProductSpecifications from './ProductSpecifications';
 import RelatedProducts from '@/components/common/RelatedProducts';
 import { useRouter } from 'next/router';
 import { products } from '@/data/products';
-import ReactImageMagnify from 'react-image-magnify';
+import MovableZoomImage from './MovableZoomImage';
 import { useCart } from '../../contexts/cart/cartContext';
 import { addItemToCart } from '../../contexts/cart/cartReducer';
 
@@ -107,40 +107,14 @@ const ProductDetails2 = () => {
         reviewSectionRef.current?.scrollIntoView({ behavior: 'smooth' });
     }
     return (
-        <div className=''>
+        <div className='sm:p-10'>
             {product &&
-                <div className="flex justify-between max-w-screen-2xl w-full mx-auto container py-28 p-20 gap-10">
+                <div className="flex flex-col sm:flex-row justify-between max-w-screen-2xl w-full mx-auto container py-28 p-5 sm:p-20 gap-10">
                     {/* Image Gallery Section */}
-                    <div className="w-1/2 flex flex-col items-center gap-4">
+                    <div className="hidden w-1/2 sm:flex flex-col items-center gap-4">
                         {/* Main Image */}
                         <div className="w-full h-[500px] object-cover border rounded">
-                            <ReactImageMagnify
-                                {...{
-                                    smallImage: {
-                                        alt: "Main Product Image",
-                                        src: mainImage,
-                                        width: 450,
-                                        height: 500,
-                                        isFluidWidth: false,
-                                    },
-                                    largeImage: {
-                                        src: mainImage,
-                                        width: 900,
-                                        height: 800,
-                                    },
-                                    enlargedImagePosition: "beside",
-                                    enlargedImageContainerDimensions: {
-                                        width: "180%",
-                                        height: "120%",
-                                    },
-                                    enlargedImageContainerStyle: {
-                                        background: "#fff",
-                                        zIndex: 10,
-                                        border: "1px solid #ddd",
-                                        boxShadow: "0px 4px 10px rgba(0,0,0,0.2)",
-                                    },
-                                }}
-                            />
+                            <MovableZoomImage mainImage={mainImage} />
                         </div>
 
                         <div className="flex gap-2">
@@ -163,9 +137,39 @@ const ProductDetails2 = () => {
                         </div>
                     </div>
 
-                    <div className="w-1/2 flex flex-col gap-6 border-r pr-5">
+                    <div className="sm:hidden image w-full flex flex-col py-5  gap-5">
+                        {/* Thumbnails */}
+                        <div className="thumbnail flex justify-center items-center gap-3">
+                            {[
+                                product.image,
+                                product.image1,
+                                product.image2 // Includes all images
+                            ].filter(Boolean) // Filters out null/undefined images
+                                .map((img, index) => (
+                                    <img
+                                        key={index}
+                                        src={img}
+                                        alt={`Thumbnail ${index + 1}`}
+                                        className={`w-[60px] h-[60px] object-cover border rounded-md cursor-pointer ${mainImage === img ? 'border-zinc-700 border-2' : 'hover:border-zinc-700'
+                                            }`}
+                                        onClick={() => setMainImage(img)} // Dynamically set the main image
+                                    />
+                                ))}
+                        </div>
+                        {/* Main Image */}
+                        <div className="w-full ">
+                            <img
+                                src={mainImage}
+                                width="100%"
+                                alt="Main Product"
+                                className="w-full h-[50vh] object-cover border rounded-md"
+                            />
+                        </div>
+                    </div>
+
+                    <div className="sm:w-1/2 flex flex-col gap-6 border-r pr-5">
                         <div>
-                            <h1 className="text-2xl font-semibold text-zinc-600 tracking-tight">{product.name}</h1>
+                            <h1 className="text-3xl font-semibold text-zinc-600 tracking-tight">{product.name}</h1>
                             <div className="flex items-center justify-between mt-3">
                                 <p className="text-lg text-gray-500">{product.category}</p>
                                 <div className="flex items-center space-x-2">
@@ -226,10 +230,10 @@ const ProductDetails2 = () => {
                     </div>
 
                     {/* Price Section */}
-                    <div className="w-1/4 flex flex-col gap-6  bg-gray-50 p-5 rounded shadow-md">
+                    <div className="sm:w-1/4 flex flex-col gap-6  bg-gray-50 p-5 rounded shadow-md">
                         <div>
-                            <span className="text-2xl font-bold text-green-600">₹{product.price}</span>
-                            <span className="text-lg text-gray-400 line-through ml-2">₹{product.originalPrice}</span>
+                            <span className="text-2xl font-bold text-green-600">${product.price}</span>
+                            <span className="text-lg text-gray-400 line-through ml-2">${product.originalPrice}</span>
                             <span className="text-lg text-red-500 ml-2">({product.discount}% OFF)</span>
                         </div>
                         <p className="mt-2 text-green-600 font-medium">In Stock</p>
@@ -271,7 +275,7 @@ const ProductDetails2 = () => {
                 </div>
             }
 
-            <div className='container w-1/2 mr-40  mx-auto p-10'>
+            <div className='container sm:w-1/2 mr-40  mx-auto p-10'>
                 {/* Reviews */}
                 <div ref={reviewSectionRef} className=" mb-10">
                     <h2 className="text-xl font-semibold text-zinc-600 tracking-tight">Submit Review </h2>

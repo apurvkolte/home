@@ -26,7 +26,7 @@ const Header1 = () => {
     return (
         <div className='w-full h-20 mx-auto flex justify-between items-center px-4 sm:px-20 gap-4 border-b-2 fixed top-0 bg-white z-50'>
             <div className='logo w-40 sm:w-48 md:w-56 h-16 sm:h-20 md:h-24 flex items-center justify-center'>
-                <Link href="/">
+                <Link href="/" legacyBehavior>
                     <a>
 
                         <img
@@ -102,7 +102,7 @@ const Header1 = () => {
                     </Link>
                 </div>
                 <div class="relative flex items-center sm:mt-3">
-                    <Link href="/cart">
+                    <Link href="/cart" legacyBehavior>
                         <PiShoppingCart class="text-xl text-zinc-600 cursor-pointer" />
                     </Link>
                     <span class="absolute top-[-15px] right-[-15px] flex items-center justify-center w-[20px] h-[20px] rounded-full bg-zinc-900 text-white text-xs font-bold">

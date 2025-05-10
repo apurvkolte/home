@@ -73,10 +73,10 @@ const WatchlistPage = () => {
 
                                     <div className="mb-3">
                                         <div className="flex items-center space-x-2">
-                                            <span className="text-lg font-bold">₹{product.price.toLocaleString()}</span>
+                                            <span className="text-lg font-bold">${product.price.toLocaleString()}</span>
                                             {product.originalPrice && (
                                                 <span className="text-sm text-gray-500 line-through">
-                                                    ₹{product.originalPrice.toLocaleString()}
+                                                    ${product.originalPrice.toLocaleString()}
                                                 </span>
                                             )}
                                             {product.discount && (

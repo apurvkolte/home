@@ -68,11 +68,11 @@ const ComparePage = () => {
                                 <td key={`price-${product.id}`} className="p-4">
                                     <div className="flex flex-col items-center">
                                         <span className="text-lg font-bold text-gray-900">
-                                            ₹{product.price.toLocaleString()}
+                                            ${product.price.toLocaleString()}
                                         </span>
                                         {product.originalPrice && (
                                             <span className="text-sm text-gray-500 line-through">
-                                                ₹{product.originalPrice.toLocaleString()}
+                                                ${product.originalPrice.toLocaleString()}
                                             </span>
                                         )}
                                         {product.discount && (

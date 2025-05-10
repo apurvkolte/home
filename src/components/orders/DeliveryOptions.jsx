@@ -14,9 +14,9 @@ const DeliveryOptions = ({ deliveryOption, setDeliveryOption }) => {
                         checked={deliveryOption === "Standard Delivery"}
                         onChange={(e) => setDeliveryOption(e.target.value)}
                         className="w-4 h-4"
-                        aria-label="Standard Delivery (₹50)"
+                        aria-label="Standard Delivery ($50)"
                     />
-                    <span className="text-lg text-gray-700">Standard Delivery (₹50)</span>
+                    <span className="text-lg text-gray-700">Standard Delivery ($50)</span>
                 </label>
                 <label htmlFor="expressDelivery" className="flex items-center gap-2">
                     <input
@@ -27,9 +27,9 @@ const DeliveryOptions = ({ deliveryOption, setDeliveryOption }) => {
                         checked={deliveryOption === "Express Delivery"}
                         onChange={(e) => setDeliveryOption(e.target.value)}
                         className="w-4 h-4"
-                        aria-label="Express Delivery (₹150)"
+                        aria-label="Express Delivery ($150)"
                     />
-                    <span className="text-lg text-gray-700">Express Delivery (₹150)</span>
+                    <span className="text-lg text-gray-700">Express Delivery ($150)</span>
                 </label>
             </div>
         </div>

@@ -1,9 +1,9 @@
 import React from "react";
 
 const OrderSummary = ({ cartSummary, calculateSubtotal, calculateTotal }) => {
-    const currencyFormatter = new Intl.NumberFormat("en-IN", {
+    const currencyFormatter = new Intl.NumberFormat("en-US", {
         style: "currency",
-        currency: "INR",
+        currency: "USD",
     });
 
     return (
