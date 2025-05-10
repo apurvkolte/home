@@ -5,9 +5,10 @@ import { motion } from "framer-motion"
 
 const Banner = () => {
     const images = [
-        "https://websitedemos.net/furniture-shop-04/wp-content/uploads/sites/1116/2022/07/hero-01.jpg",
-        "https://websitedemos.net/office-furniture-store-04/wp-content/uploads/sites/913/2021/07/wfh-furniture-store-hero-img-bg.jpg",
+        "/banner/banner.jpg",
+        "/banner/banner1.jpg",
     ];
+
     return (
         <div >
             <Zoom scale={0.7} indicators={false}
@@ -34,7 +35,7 @@ const Banner = () => {
                                 })}
 
                                 <div className='w-[120px] text-center uppercase px-4 py-2 bg-zinc-900 hover:bg-zinc-800 hover:font-semibold text-white border-[1px] border-zinc-600 mt-10 shadow-lg'>
-                                    <a href='#'><span className='text-red-700'>Shop</span> Now</a>
+                                    <a href='#'><span className='text-yellow-500'>Shop</span> Now</a>
                                 </div>
                             </div>
                         }
@@ -44,7 +45,7 @@ const Banner = () => {
                                 <h1 className='text-4xl sm:text-6xl font-lighter tracking-tighter leading-tight space-mono-regular'>Your Favorite Brands at </h1>
                                 <h1 className='text-4xl sm:text-6xl font-lighter tracking-tighter leading-tight space-mono-regular mb-5'> Your Fingertips</h1>
                                 <div className='w-[120px] text-center uppercase px-4 py-2 bg-zinc-900 hover:bg-zinc-800 hover:font-semibold text-white border-[1px] border-zinc-600  shadow-lg'>
-                                    <a href='#'><span className='text-red-700'>Shop</span> Now</a>
+                                    <a href='#'><span className='text-yellow-500'>Shop</span> Now</a>
                                 </div>
                             </div>
                         }

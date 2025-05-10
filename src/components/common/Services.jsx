@@ -8,10 +8,10 @@ import { motion } from "framer-motion"
 
 const Services = () => {
     return (
-        <div className='w-full h-auto bg-gradient-to-r from-gray-200 to-gray-300  '>
-            <div className='max-w-screen-xl mx-auto py-5'>
+        <div className='w-full h-auto bg-gradient-to-r bg-[#F8F9FA]  '>
+            <div className='max-w-screen-xl mx-auto py-5  '>
 
-                <h1 className='text-4xl text-center font-bold tracking-tight leading-none capitalize font-[sofia] mt-8 text-gray-600 overflow-hidden '>
+                <h1 className='text-4xl text-center font-bold tracking-tight leading-none  mb-12 capitalize font-[sofia] mt-8 text-gray-600 overflow-hidden '>
                     <motion.span
                         initial={{ rotate: 90, y: "40%", opacity: 0 }}
                         whileInView={{ rotate: 0, y: 0, opacity: 1 }}
@@ -22,7 +22,7 @@ const Services = () => {
                     </motion.span>
                 </h1>
 
-                <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 py-10 gap-8'>
+                <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mb-10 gap-8'>
 
                     <div className='flex gap-5 items-center bg-gray-100 p-7 rounded-lg shadow-md transition-transform hover:scale-105'>
                         <TbTruckDelivery className='text-4xl text-green-400' />

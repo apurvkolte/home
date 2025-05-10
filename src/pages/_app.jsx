@@ -1,30 +1,20 @@
-import React, { useEffect } from 'react';
-import Seo from '@/components/common/seo';
+import { CommonProvider } from '../contexts/common/commonContext';
+import { CartProvider } from '../contexts/cart/cartContext';
+import { FiltersProvider } from '../contexts/filters/filtersContext';
 import '../scss/index.scss';
-import 'remixicon/fonts/remixicon.css'
-import Header from '@/components/common/Header';
-import Banner from '@/components/common/Banner';
-import Cards from '@/components/common/Cards';
-import ImageSlider from '@/components/common/ImageSlider';
-import Services from '@/components/common/Services';
-import Footer from '@/components/common/Footer';
-import AnimatedCursor from "@/components/common/AnimatedCursor";
-const _app = () => {
+import 'remixicon/fonts/remixicon.css';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css'
 
-    return (
-        <div className='w-full h-screen scroll-smooth'>
-            <Seo pageTitle="Ecommerce Website by Apurv Kolte" />
-            <Header />
-            <Banner />
-            {/* <AnimatedCursor /> */}
-            <ImageSlider />
-            <Cards />
-            <br />
-            <Services />
-            <Footer />
-
-        </div>
-    );
+function MyApp({ Component, pageProps }) {
+    return <CommonProvider>
+        <FiltersProvider>
+            <CartProvider>
+                <Component {...pageProps} />
+                <ToastContainer />
+            </CartProvider>
+        </FiltersProvider>
+    </CommonProvider>
 }
 
-export default _app;
+export default MyApp;
