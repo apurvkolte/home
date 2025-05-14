@@ -1,6 +1,6 @@
 export const home = [
-    { title: "Electronics", category: ["Smart TVs", "Gaming Consoles", "Action Cameras"], url: "Electronics" },
-    { title: "Photography", category: ["DSLR Cameras", "Action Cameras"], url: "Photography" },
+    { title: "Electronics", category: ["Smart TVs", "Gaming Consoles", "Action Cameras"], url: "#" },
+    { title: "Photography", category: ["DSLR Cameras", "Action Cameras"], url: "#" },
     { title: "Lifestyle", category: ["Wearables", "Fitness Bands", "Personal Care"], url: "#" },
     { title: "Home & Kitchen", category: ["Air Purifiers", "Coffee Makers", "Electric Kettles"], url: "#" },
     { title: "Fitness", category: ["Yoga Mats", "Running Shoes"], url: "#" },
@@ -21,17 +21,17 @@ export const electronics = [
     {
         title: "Product Details One",
         category: ["Product Details 1"],
-        url: "Photography"
+        url: "product-details/3"
     },
     {
         title: "Product Details Two",
         category: ["Product Details 2",],
-        url: "Photography"
+        url: "product-details2/2"
     },
     {
         title: "Product Details Three",
         category: ["Product Details 2",],
-        url: "Photography"
+        url: "product-details1/1"
     },
     {
         title: "Shop",
@@ -142,32 +142,32 @@ export const fitness = [
     {
         title: "Accessories",
         category: ["Backpacks", "Wrist Watches", "Gym Towels"],
-        url: "Fitness & Sports"
+        url: "products"
     },
     {
         title: "Exercise Equipment",
         category: ["Treadmills", "Dumbbells", "Resistance Bands"],
-        url: "Fitness & Sports"
+        url: "products"
     },
     {
         title: "Activewear",
         category: ["Sports Shoes", "Yoga Pants", "T-Shirts"],
-        url: "Fitness & Sports"
+        url: "products"
     },
     {
         title: "Outdoor Fitness",
         category: ["Running Shoes", "Cycling Helmets", "Fitness Trackers"],
-        url: "Fitness & Sports"
+        url: "products"
     },
     {
         title: "Nutrition",
         category: ["Protein Shakes", "Energy Bars", "Vitamins"],
-        url: "Fitness & Sports"
+        url: "products"
     },
     {
         title: "Recovery Tools",
         category: ["Foam Rollers", "Massage Guns", "Knee Braces"],
-        url: "Fitness & Sports"
+        url: "products"
     }
 ];
 
@@ -176,32 +176,32 @@ export const fashion = [
     {
         title: "Accessories",
         category: ["Backpacks", "Wrist Watches", "Handbags"],
-        url: "Wearables & Personal Care"
+        url: "products"
     },
     {
         title: "Clothing",
         category: ["T-Shirts", "Jeans", "Jackets"],
-        url: "Wearables & Personal Care"
+        url: "products"
     },
     {
         title: "Footwear",
         category: ["Sneakers", "Formal Shoes", "Sandals"],
-        url: "Wearables & Personal Care"
+        url: "products"
     },
     {
         title: "Jewelry",
         category: ["Necklaces", "Earrings", "Bracelets"],
-        url: "Wearables & Personal Care"
+        url: "products"
     },
     {
         title: "Eyewear",
         category: ["Sunglasses", "Reading Glasses", "Contact Lenses"],
-        url: "Wearables & Personal Care"
+        url: "products"
     },
     {
         title: "Hats & Caps",
         category: ["Baseball Caps", "Beanies", "Fedoras"],
-        url: "Wearables & Personal Care"
+        url: "products"
     }
 ];
 

@@ -129,9 +129,9 @@ export default function Nav() {
                             About
                         </Button>
                         <div className="absolute hidden group-hover:block bg-white text-black p-2 shadow-md z-10 w-48">
-                            <Link href="/about-us" className="block p-2 cursor-pointer hover:bg-gray-100">Our Mission</Link>
-                            <Link href="/about-us" className="block p-2 cursor-pointer hover:bg-gray-100">Our Team</Link>
-                            <Link href="/about-us" className="block p-2 cursor-pointer hover:bg-gray-100">Careers</Link>
+                            <Link href="/about-us" ><span className="block p-2 cursor-pointer hover:bg-gray-100">Our Mission</span></Link>
+                            <Link href="/about-us" ><span className="block p-2 cursor-pointer hover:bg-gray-100">Our Team</span></Link>
+                            <Link href="/about-us" ><span className="block p-2 cursor-pointer hover:bg-gray-100">Careers</span></Link>
                         </div>
                     </div>
 

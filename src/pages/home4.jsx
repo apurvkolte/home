@@ -9,36 +9,7 @@ import { products } from '@/data/products';
 import Link from 'next/link';
 const Home = () => {
 
-    const featuredProducts = [
-        {
-            id: 1,
-            name: 'Wireless Headphones',
-            price: 99.99,
-            image: 'https://via.placeholder.com/300x300?text=Headphones',
-            category: 'Electronics'
-        },
-        {
-            id: 2,
-            name: 'Running Shoes',
-            price: 79.99,
-            image: 'https://via.placeholder.com/300x300?text=Shoes',
-            category: 'Footwear'
-        },
-        {
-            id: 3,
-            name: 'Smart Watch',
-            price: 199.99,
-            image: 'https://via.placeholder.com/300x300?text=Smartwatch',
-            category: 'Electronics'
-        },
-        {
-            id: 4,
-            name: 'Denim Jacket',
-            price: 59.99,
-            image: 'https://via.placeholder.com/300x300?text=Jacket',
-            category: 'Clothing'
-        },
-    ];
+
 
     const categories = [
         { name: 'Electronics', icon: '🔌', count: 120 },
