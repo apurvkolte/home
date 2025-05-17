@@ -39,7 +39,7 @@ const FAQ = () => {
                         Frequently Asked Questions
                     </h1>
                     <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                        Lorem ipsum dolor sit amet? <Link href="/contact-us" className="text-blue-600 hover:underline">Contact our support team</Link>.
+                        Lorem ipsum dolor sit amet? <Link href="/contact-us" className="text-blue-600 cursor-pointer hover:underline">Contact our support team</Link>.
                     </p>
                 </div>
 
@@ -91,9 +91,9 @@ const FAQ = () => {
                     <p className="text-gray-600 mb-6">
                         Still have questions?
                     </p>
-                    <a
+                    <Link
                         href="/contact-us"
-                        className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors duration-200"
+                        className="inline-flex items-center px-6 py-3 cursor-pointer border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors duration-200"
                     >
                         Contact Support
                         <svg
@@ -109,7 +109,7 @@ const FAQ = () => {
                                 clipRule="evenodd"
                             />
                         </svg>
-                    </a>
+                    </Link>
                 </div>
             </div>
         </div>
