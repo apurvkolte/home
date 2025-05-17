@@ -3,14 +3,15 @@ import React, { useState } from "react";
 const ProductSpecifications = () => {
     // Specifications Data
     const productDetails = [
-        { title: "Material", description: "High-quality ABS Plastic" },
-        { title: "Dimensions", description: "12 x 8 x 5 cm" },
-        { title: "Weight", description: "250 grams" },
-        { title: "Color Options", description: "Black, Blue, Red" },
-        { title: "Battery Life", description: "30 hours continuous use" },
-        { title: "Connectivity", description: "Bluetooth 5.0" },
-        { title: "Warranty", description: "1 Year Manufacturer Warranty" },
+        { title: "Feature One", description: "Lorem ipsum dolor sit amet" },
+        { title: "Feature Two", description: "Consectetur adipiscing elit" },
+        { title: "Feature Three", description: "Sed do eiusmod tempor" },
+        { title: "Feature Four", description: "Incididunt ut labore et dolore" },
+        { title: "Feature Five", description: "Magna aliqua ut enim" },
+        { title: "Feature Six", description: "Ad minim veniam quis" },
+        { title: "Feature Seven", description: "Nostrud exercitation ullamco" },
     ];
+
 
     // State for toggling visibility of extra details
     const [showMore, setShowMore] = useState(false);
@@ -22,7 +23,7 @@ const ProductSpecifications = () => {
 
     return (
         <div className="mt-6">
-            <h2 className="text-xl font-semibold text-zinc-600 tracking-tight">Specifications</h2>
+            <h2 className="text-xl font-semibold text-zinc-600 tracking-tight">Product Specifications</h2>
             {productDetails.length ? (
                 <table className="w-full border-collapse border border-dashed border-zinc-200 mt-2 table-auto">
                     <thead>
@@ -32,7 +33,7 @@ const ProductSpecifications = () => {
                                 colSpan="2"
                             >
                                 <h5 className="prod-heading text-left font-semibold text-zinc-600 tracking-tight">
-                                    Product Specifications
+                                    Technical Details
                                 </h5>
                             </th>
                         </tr>

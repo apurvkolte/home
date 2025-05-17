@@ -8,13 +8,17 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const ProductDisplay = ({ category }) => {
-    const product = products.filter((item) => item.category == category)
+    const product =
+        products.length >= 6
+            ? products
+            : products.filter((item) => item.category === category);
+
     const settings = {
-        speed: 2000,
+        speed: 800,
         infinite: true,
         autoplay: true,
         slidesToShow: 5,
-        slidesToScroll: 5,
+        slidesToScroll: 4,
         arrows: true,
         responsive: [
             {
@@ -33,9 +37,10 @@ const ProductDisplay = ({ category }) => {
             },
         ],
     };
+
     return (
         <div className="bg-gradient-to-r from-gray-50 to-gray-100 py-12">
-            <div className="container mx-auto px-6 md:px-12">
+            <div className="container mx-auto px-4">
                 {/* Horizontal Section */}
                 <div className="">
                     <h1 className="text-2xl font-bold text-zinc-600 tracking-tight">
@@ -50,7 +55,9 @@ const ProductDisplay = ({ category }) => {
                     </h1>
                     <Slider1 {...settings}>
                         {product?.slice(0, 30)?.map((product) => (
-                            <Card key={product.id} border="2px" product={product} />
+                            <div key={product.id} className="px-4">
+                                <Card key={product.id} border="2px" product={product} />
+                            </div>
                         ))}
                     </Slider1>
                 </div>

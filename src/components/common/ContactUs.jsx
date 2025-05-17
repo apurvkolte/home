@@ -6,7 +6,7 @@ const ContactUs = () => {
     return (
         <div className="container max-w-screen-xl mx-auto px-4 sm:px-8 py-32">
             <section className="text-center mb-16">
-                <h1 className="text-4xl font-bold text-gray-800 mb-4">Contact Us</h1>
+                <h1 className="text-2xl sm:text-4xl font-bold text-gray-800 mb-4">Contact Us</h1>
                 <div className="w-20 h-1 bg-blue-600 rounded mx-auto mb-6"></div>
                 <p className="text-lg text-gray-600 max-w-2xl mx-auto">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi voluptatem, quidem officiis sapiente vero praesentium!

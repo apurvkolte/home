@@ -11,7 +11,7 @@ import { products } from '@/data/products';
 import { useCart } from '../../contexts/cart/cartContext';
 import { addItemToCart } from '../../contexts/cart/cartReducer';
 import MovableZoomImage from './MovableZoomImage';
-
+import { FaShoppingCart, FaBolt } from 'react-icons/fa';
 
 const ProductDetails = () => {
     const router = useRouter();
@@ -211,11 +211,18 @@ const ProductDetails = () => {
 
                                 <div className="flex space-x-4 mt-4">
                                     <Link href='/shipping-address'>
-                                        <button className="px-6 py-2 bg-green-600 text-white rounded-lg shadow hover:bg-green-700 transition">
+                                        <button
+                                            className="sm:flex items-center gap-2 px-6 py-2 sm:py-3 bg-green-600 text-white rounded-lg shadow hover:bg-green-700 transition hover:shadow-md active:scale-95"
+                                        >
+                                            <FaBolt className=" hidden sm:block text-base sm:text-lg" />
                                             Buy Now
                                         </button>
                                     </Link>
-                                    <button onClick={handleAddToCart} className="px-6 py-2 bg-gray-600 text-white rounded-lg shadow hover:bg-gray-700 transition">
+                                    <button
+                                        onClick={handleAddToCart}
+                                        className="flex items-center gap-2 px-6 py-2 sm:py-3 bg-gray-600 text-white rounded-lg shadow hover:bg-gray-700 transition hover:shadow-md active:scale-95"
+                                    >
+                                        <FaShoppingCart className="hidden sm:block text-lg" />
                                         Add to Cart
                                     </button>
                                 </div>
@@ -273,33 +280,39 @@ const ProductDetails = () => {
                         <ul className="space-y-2 text-gray-700">
                             <li className="flex items-start space-x-2">
                                 <span className="text-blue-500">✔</span>
-                                <span>Crystal-clear sound with deep bass.</span>
+                                <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
                             </li>
                             <li className="flex items-start space-x-2">
                                 <span className="text-blue-500">✔</span>
-                                <span>Ergonomic design for long hours of comfort.</span>
+                                <span>Phasellus nec nulla vel metus vestibulum feugiat.</span>
                             </li>
                             <li className="flex items-start space-x-2">
                                 <span className="text-blue-500">✔</span>
-                                <span>Advanced noise cancellation for focused listening.</span>
+                                <span>Curabitur aliquam sapien ut tortor facilisis, vitae sagittis nunc luctus.</span>
                             </li>
                             <li className="flex items-start space-x-2">
                                 <span className="text-blue-500">✔</span>
-                                <span>Bluetooth 5.0 for stable connectivity across devices.</span>
+                                <span>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.</span>
                             </li>
                             <li className="flex items-start space-x-2">
                                 <span className="text-blue-500">✔</span>
-                                <span>Up to 30 hours of battery life with fast charging.</span>
+                                <span>Suspendisse potenti. Sed sit amet tortor nec lorem cursus bibendum.</span>
                             </li>
                             <li className="flex items-start space-x-2">
                                 <span className="text-blue-500">✔</span>
-                                <span>Lightweight and portable for travel.</span>
+                                <span>Etiam vel risus ut nunc fermentum fringilla sed eget nunc.</span>
                             </li>
                             <li className="flex items-start space-x-2">
                                 <span className="text-blue-500">✔</span>
-                                <span>Easy touch controls for calls and music.</span>
+                                <span>Mauris ut justo non nulla finibus tincidunt vitae ut urna.</span>
+                            </li>
+                            <li className="flex items-start space-x-2">
+                                <span className="text-blue-500">✔</span>
+                                <span>Aliquam erat volutpat. Integer blandit eu justo nec viverra.</span>
                             </li>
                         </ul>
+
+
                     </div>
 
                     {/* Specifications Table */}

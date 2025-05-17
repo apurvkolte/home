@@ -14,6 +14,7 @@ import {
 
 const Sidebar = () => {
     const sidebarMenu = [
+        { title: "Admin Panel", route: "/admin", icon: <FiSettings />, color: "text-red-400" },
         { title: "Dashboard", route: "/dashboard", icon: <FiHome />, color: "text-blue-400" },
         { title: "Profile", route: "/profiles", icon: <FiUser />, color: "text-purple-400" },
         { title: "Addresses", route: "/address", icon: <FiMapPin />, color: "text-yellow-400" },
@@ -23,7 +24,6 @@ const Sidebar = () => {
         { title: "Invoice", route: "/invoice", icon: <FiFileText />, color: "text-pink-400" },
         { title: "Account", route: "/profiles", icon: <FiKey />, color: "text-indigo-400" },
         { title: "Analytics", route: "/analytics", icon: <FiBarChart2 />, color: "text-teal-400" },
-        { title: "Admin Panel", route: "/admin", icon: <FiSettings />, color: "text-red-400" },
     ];
 
     return (

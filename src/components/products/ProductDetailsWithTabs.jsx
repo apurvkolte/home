@@ -63,15 +63,16 @@ const ProductDetailsWithTabs = () => {
                     <ul className="space-y-4 text-gray-700">
                         <li className="flex items-start space-x-3">
                             <span className="text-green-500">✔</span>
-                            <span>Crystal-clear sound with deep bass.</span>
+                            <span>Phasellus nec nulla vel metus vestibulum feugiat.</span>
                         </li>
                         <li className="flex items-start space-x-3">
                             <span className="text-green-500">✔</span>
-                            <span>Ergonomic design for all-day comfort.</span>
+                            <span>Suspendisse potenti. Sed sit amet tortor nec lorem cursus bibendum.</span>
+
                         </li>
                         <li className="flex items-start space-x-3">
                             <span className="text-green-500">✔</span>
-                            <span>Advanced noise cancellation for immersive listening.</span>
+                            <span>Aliquam erat volutpat. Integer blandit eu justo nec viverra.</span>
                         </li>
                     </ul>
                 </div>
@@ -158,8 +159,8 @@ const ProductDetailsWithTabs = () => {
             <div className="flex justify-around border-b border-gray-300">
                 <button
                     className={`px-4 md:px-6 py-3 bg-zinc-800 text-white font-semibold ${activeTab === "description"
-                            ? "border-b-4 border-green-500 text-green-500"
-                            : "text-gray-600 hover:text-green-500"
+                        ? "border-b-4 border-green-500 text-green-500"
+                        : "text-gray-600 hover:text-green-500"
                         }`}
                     onClick={() => setActiveTab("description")}
                 >
@@ -167,8 +168,8 @@ const ProductDetailsWithTabs = () => {
                 </button>
                 <button
                     className={`px-4 md:px-6 py-3 bg-zinc-800 text-white font-semibold ${activeTab === "specifications"
-                            ? "border-b-4 border-green-500 text-green-500"
-                            : "text-gray-600 hover:text-green-500"
+                        ? "border-b-4 border-green-500 text-green-500"
+                        : "text-gray-600 hover:text-green-500"
                         }`}
                     onClick={() => setActiveTab("specifications")}
                 >
@@ -176,8 +177,8 @@ const ProductDetailsWithTabs = () => {
                 </button>
                 <button
                     className={`px-4 md:px-6 py-3 bg-zinc-800 text-white font-semibold ${activeTab === "reviews"
-                            ? "border-b-4 border-green-500 text-green-500"
-                            : "text-gray-600 hover:text-green-500"
+                        ? "border-b-4 border-green-500 text-green-500"
+                        : "text-gray-600 hover:text-green-500"
                         }`}
                     onClick={() => setActiveTab("reviews")}
                 >

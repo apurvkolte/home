@@ -107,9 +107,9 @@ export default function AdminDashboardPage() {
             {isMobile && (
                 <button
                     onClick={toggleSidebar}
-                    className="fixed z-50 top-4 left-4 p-2 rounded-md bg-gray-800 text-white"
+                    className="fixed z-50 top-24 left-4 p-2 rounded-md text-gray-800 bg-white"
                 >
-                    {isSidebarOpen ? <FiX size={24} /> : <FiMenu size={24} />}
+                    {isSidebarOpen ? <FiX size={20} /> : <FiMenu size={20} />}
                 </button>
             )}
 
@@ -141,7 +141,7 @@ export default function AdminDashboardPage() {
 
             {isSidebarOpen && <Sidebar isMobile={isMobile} toggleSidebar={isMobile ? toggleSidebar : null} />}
 
-            <main className="flex-1 px-6 lg:px-24 py-28 transition-all">
+            <main className="flex-1 px-6 lg:px-24 py-32 transition-all">
                 <div className="flex justify-between items-center gap-2 mb-8">
                     <h1 className={`text-xl sm:text-3xl font-semibold tracking-tight ${isDarkMode ? "text-zinc-300" : "text-zinc-800"}`}>Dashboard</h1>
                     <button

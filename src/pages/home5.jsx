@@ -17,7 +17,7 @@ const featuredProducts = [
 ];
 
 const categories = [
-    { name: 'Electronics', image: '/images/tv.jpg' },
+    { name: 'Electronics', image: '/images/camera.jpg' },
     { name: 'Clothing', image: '/images/menshirt2.jpg' },
     { name: 'Home Goods', image: '/images/coffeecupset1.jpg' },
     { name: 'Bags', image: '/images/bag.jpg' },
@@ -131,25 +131,25 @@ const HeroCarousel = () => {
             title: 'Welcome to Our Store',
             description: 'Discover amazing products and deals.',
             buttonText: 'Shop Now',
-            buttonLink: '/shop',
+            buttonLink: '/',
         },
         {
             imageUrl: '/home/aa.jpg',
             title: 'New Arrivals',
             description: 'Check out our latest collection.',
             buttonText: 'See New Arrivals',
-            buttonLink: '/new-arrivals',
+            buttonLink: '/products',
         },
     ];
 
     return (
         <Carousel autoPlay={true} interval={5000}>
             {slides.map((slide, index) => (
-                <div key={index} className="relative w-full h-[400px] flex items-center justify-center">
+                <div key={index} className="relative w-full h-[500px] md:h-[600px] lg:h-[700px]">
                     <img
                         src={slide.imageUrl}
                         alt={`Slide ${index + 1}`}
-                        className="absolute inset-0 object-top w-full h-full"
+                        className="w-full h-full  transition-transform duration-300 group-hover:scale-105"
                     />
                     <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
                         <div className="text-center text-white p-4 sm:p-8">
@@ -157,7 +157,7 @@ const HeroCarousel = () => {
                                 initial={{ opacity: 0, y: -20 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.5, delay: 0.2 }}
-                                className="text-2xl sm:text-4xl font-bold mb-2 sm:mb-4"
+                                className="text-2xl sm:text-7xl font-bold tracking-tighter text-slate-50 mb-2 sm:mb-4"
                             >
                                 {slide.title}
                             </motion.h2>
@@ -177,7 +177,7 @@ const HeroCarousel = () => {
                                 <Button
                                     className="bg-green-500 hover:bg-green-600 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-full"
                                 >
-                                    <a href={slide.buttonLink}>{slide.buttonText}</a>
+                                    <div className='cursor-pointer'>{slide.buttonText}</div>
                                 </Button>
                             </motion.div>
                         </div>
@@ -190,13 +190,13 @@ const HeroCarousel = () => {
 
 const CategoryList = () => {
     return (
-        <div className="py-12 ">
-            <h2 className="text-2xl font-bold text-gray-800 mb-8 text-center">Shop by Category</h2>
-            <div className="grid grid-cols-2 sm:grid-cols-5 gap-4">
+        <div className="py-12 px-5 sm:px-20">
+            <h2 className="text-2xl sm:text-4xl font-bold text-gray-800 mb-14 text-center">Shop by Category</h2>
+            <div className="grid grid-cols-2 sm:grid-cols-5 gap-8 sm:gap-4">
                 {categories.map((category) => (
                     <div
                         key={category.name}
-                        className="flex flex-col items-center justify-center"
+                        className="flex flex-col items-center justify-center cursor-pointer"
                     >
                         <div className="w-20 h-20 rounded-full overflow-hidden mb-2">
                             <img
@@ -272,8 +272,8 @@ const FeaturedProducts = () => {
     }, []);
 
     return (
-        <div className="py-12">
-            <h2 className="text-2xl font-bold text-gray-800 mb-8 text-center">Featured Products</h2>
+        <div className="py-12 sm:px-10">
+            <h2 className="text-2xl sm:text-4xl font-bold text-gray-800 mb-8 text-center">Featured Products</h2>
             {loading ? (
                 <div className="flex justify-center items-center h-64">
                     <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-gray-500"></div>
@@ -321,10 +321,10 @@ const FlashSale = () => {
 
     return (
         <div className="py-12 bg-gray-100">
-            <h2 className="text-2xl font-bold text-gray-800 mb-8 text-center">
+            <h2 className="text-2xl sm:text-4xl font-bold text-gray-800 mb-8 text-center">
                 % Flash Sale
             </h2>
-            <div className="flex flex-col sm:flex-row gap-8">
+            <div className="flex flex-col px-10 sm:flex-row gap-8">
                 {flashSaleProducts.map((product) => (
                     <Card key={product.id} className="group  overflow-hidden relative">
                         <CardHeader>
@@ -332,7 +332,7 @@ const FlashSale = () => {
                                 <img
                                     src={product.imageUrl}
                                     alt={product.name}
-                                    className="w-[20rem] h-full object-conver transition-transform duration-300 group-hover:scale-105"
+                                    className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-105"
                                 />
                                 <div className="absolute top-2 left-2 bg-red-500 text-white px-2 py-1 rounded-md text-xs">
                                     {product.discount}% Off
@@ -340,7 +340,7 @@ const FlashSale = () => {
                             </div>
                         </CardHeader>
                         <CardContent>
-                            <h3 className="text-lg font-semibold text-gray-800">{product.name}</h3>
+                            <h3 className="text-lg font-semibold text-gray-800">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, architecto.</h3>
                             <p className="text-gray-600 text-sm mb-2">
                                 Price: <span className="line-through">${product.price.toFixed(2)}</span>
                                 <span className="text-red-500 font-bold"> ${(product.price * (1 - product.discount / 100)).toFixed(2)}</span>
@@ -408,15 +408,17 @@ function HeroSection() {
 
 const HomePage = () => {
     return (
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto">
             <Header />
             <HeroCarousel />
             <CategoryList />
             <FeaturedProducts />
-            <FlashSale />
             <HeroSection />
-            <NewsletterSection />
+
+            <FlashSale />
             <Services />
+            <NewsletterSection />
+
             <Footer />
         </div>
     );

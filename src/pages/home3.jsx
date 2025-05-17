@@ -24,25 +24,28 @@ const Home = () => {
 
     return (
         <div className="w-full min-h-screen scroll-smooth">
-            <Seo pageTitle="Florish - eCommerce Next.js, React Template" />
+            <Seo pageTitle="Florish - React Ecommerce Template with React Hooks, Redux, Next JS, Admin Panel & Tailwind CSS" />
+
             <div className="relative bg-white z-50">
                 {loading && <Loader />}
                 <Header />
                 <Banner />
                 <CategoriesPage1 />
 
-                <div className='container px-20 mx-auto '>
+                <div className='container px-5 sm:px-20 mx-auto bg-slate-50 '>
                     <ImageSlider />
                 </div>
 
                 <Cards />
                 <br />
-                <div className='container px-20 mx-auto '>
+                <div className='container sm:px-20 mx-auto bg-[#F8F8F8] '>
                     <CategoriesPage2 />
                 </div>
 
-
-                <Services />
+                <div className='-mt-3'>
+                    <hr />
+                    <Services />
+                </div>
 
             </div>
 

@@ -11,6 +11,8 @@ import { addItemToCart } from '../../contexts/cart/cartReducer';
 import { products } from '@/data/products';
 import productsData from '@/data/productsData';
 import MovableZoomImage from './MovableZoomImage1';
+import { FaShoppingCart, FaBolt } from 'react-icons/fa';
+
 
 const ProductDetails1 = () => {
     const router = useRouter();
@@ -195,11 +197,18 @@ const ProductDetails1 = () => {
                         {/* Action Buttons */}
                         <div className="flex space-x-4 mt-4">
                             <Link href='/shipping-address'>
-                                <button className="px-6 py-2 bg-green-600 text-white rounded">
+                                <button
+                                    className="flex items-center gap-2 px-6 py-2 sm:py-3 bg-green-600 text-white rounded-lg shadow hover:bg-green-700 transition hover:shadow-md active:scale-95"
+                                >
+                                    <FaBolt className="hidden sm:block text-lg" />
                                     Buy Now
                                 </button>
                             </Link>
-                            <button onClick={handleAddToCart} className="px-6 py-2 bg-gray-600 text-white rounded">
+                            <button
+                                onClick={handleAddToCart}
+                                className="flex items-center gap-2 px-6 py-2 sm:py-3 bg-gray-600 text-white rounded-lg shadow hover:bg-gray-700 transition hover:shadow-md active:scale-95"
+                            >
+                                <FaShoppingCart className="hidden sm:block text-lg" />
                                 Add to Cart
                             </button>
                         </div>

@@ -26,7 +26,7 @@ export const electronics = [
     {
         title: "Product Details Two",
         category: ["Product Details 2",],
-        url: "product-details2/2"
+        url: "product-details2/27"
     },
     {
         title: "Product Details Three",
@@ -41,7 +41,7 @@ export const electronics = [
     {
         title: "Shop Grid-RTL",
         category: ["Product Details 2",],
-        url: "productsRTL"
+        url: "ProductsRTL"
     },
     {
         title: "Shop Grid Three",
@@ -58,9 +58,9 @@ export const electronics = [
 
 export const lifestyle = [
     {
-        title: "Dashboard",
+        title: "Admin Dashboard",
         category: ["Shope"],
-        url: "dashboard"
+        url: "admin"
     },
     {
         title: "Cart",
@@ -78,30 +78,51 @@ export const lifestyle = [
         url: "compare"
     },
     {
+        title: "Checkout",
+        category: ["Product Details 2",],
+        url: "checkout"
+    },
+    {
+        title: "Orders",
+        category: ["Product Details 2",],
+        url: "orders"
+    },
+    {
+        title: "Invoice",
+        category: ["Product Details 2",],
+        url: "invoice"
+    },
+    {
+        title: "Sign In",
+        category: ["Product Details 2",],
+        url: "login"
+    },
+    {
+        title: "Sign Up",
+        category: ["Product Details 2",],
+        url: "register"
+    },
+
+    {
+        title: "Update Profile",
+        category: ["Product Details 2",],
+        url: "update-profile"
+    },
+    {
+        title: "Multiple Address",
+        category: ["Product Details 2",],
+        url: "address"
+    },
+    {
         title: "Shipping Address",
         category: ["Product Details 2",],
         url: "shipping-address"
     },
-    // {
-    //     title: "Travel",
-    //     category: ["Luggage", "Travel Accessories", "Backpacks"],
-    //     url: "Photography"
-    // },
-    // {
-    //     title: "Home Decor",
-    //     category: ["Wall Art", "Decorative Lights", "Indoor Plants"],
-    //     url: "Photography"
-    // },
-    // {
-    //     title: "Personal Care",
-    //     category: ["Skin Care Products", "Hair Care Products", "Fragrances"],
-    //     url: "Photography"
-    // },
-    // {
-    //     title: "Outdoor Adventure",
-    //     category: ["Camping Gear", "Hiking Accessories", "Trekking Shoes"],
-    //     url: "Photography"
-    // }
+    {
+        title: "FAQ",
+        category: ["Product Details 2",],
+        url: "faq"
+    },
 ];
 
 
@@ -109,32 +130,32 @@ export const living = [
     {
         title: "Lifestyle",
         category: ["Wearables", "Fitness Bands", "Personal Care"],
-        url: "products"
+        url: "#"
     },
     {
         title: "Home Essentials",
         category: ["Kitchen Appliances", "Cleaning Tools", "Storage Solutions"],
-        url: "products"
+        url: "#"
     },
     {
         title: "Furniture",
         category: ["Sofas", "Beds", "Dining Tables"],
-        url: "products"
+        url: "#"
     },
     {
         title: "Decor",
         category: ["Wall Art", "Indoor Plants", "Lighting"],
-        url: "products"
+        url: "#"
     },
     {
         title: "Appliances",
         category: ["Refrigerators", "Microwaves", "Washing Machines"],
-        url: "products"
+        url: "#"
     },
     {
         title: "Outdoor Living",
         category: ["Gardening Tools", "Patio Furniture", "Barbecue Grills"],
-        url: "products"
+        url: "#"
     }
 ];
 

@@ -49,21 +49,21 @@ const Header = () => {
 
                         <div className='flex flex-col justify-between gap-3 items-start p-7' >
                             <ul className=''>
-                                <li className='mb-2 text-sm capitalize hover:font-medium hover:opacity-[1] opacity-[0.8]'>
+                                <li className='mb-2 text-sm capitalize hover:font-medium hover:text-green-700 hover:opacity-[1] opacity-[0.8]'>
                                     <Link href="/">
-                                        <a className='cursor-pointer' >
+                                        <a className='cursor-pointer'>
                                             <h3 className='text-sm font-medium capitalize'>Home</h3>
                                         </a>
                                     </Link>
                                 </li>
-                                <li className='mb-2 text-sm capitalize hover:font-medium hover:opacity-[1] opacity-[0.8]'>
+                                <li className='mb-2 text-sm capitalize hover:font-medium hover:text-green-700 hover:opacity-[1] opacity-[0.8]'>
                                     <Link href="/home2">
                                         <a className='cursor-pointer' >
                                             <h3 className='text-sm font-medium capitalize'>Home Two</h3>
                                         </a>
                                     </Link>
                                 </li>
-                                <li className='mb-2 text-sm capitalize hover:font-medium hover:opacity-[1] opacity-[0.8]'>
+                                <li className='mb-2 text-sm capitalize hover:font-medium hover:text-green-700 hover:opacity-[1] opacity-[0.8]'>
                                     <Link href="/home3">
                                         <a className='cursor-pointer' >
                                             <h3 className='text-sm font-medium capitalize'>Home Three</h3>
@@ -71,21 +71,21 @@ const Header = () => {
                                     </Link>
                                 </li>
 
-                                <li className='mb-2 text-sm capitalize hover:font-medium hover:opacity-[1] opacity-[0.8]'>
+                                <li className='mb-2 text-sm capitalize hover:font-medium hover:text-green-700 hover:opacity-[1] opacity-[0.8]'>
                                     <Link href="/home4">
                                         <a className='cursor-pointer' >
                                             <h3 className='text-sm font-medium capitalize'>Home Four</h3>
                                         </a>
                                     </Link>
                                 </li>
-                                <li className='mb-2 text-sm capitalize hover:font-medium hover:opacity-[1] opacity-[0.8]'>
+                                <li className='mb-2 text-sm capitalize hover:font-medium hover:text-green-700 hover:opacity-[1] opacity-[0.8]'>
                                     <Link href="/home5">
                                         <a className='cursor-pointer' >
                                             <h3 className='text-sm font-medium capitalize'>Home Five</h3>
                                         </a>
                                     </Link>
                                 </li>
-                                <li className='mb-2 text-sm capitalize hover:font-medium hover:opacity-[1] opacity-[0.8]'>
+                                <li className='mb-2 text-sm capitalize hover:font-medium hover:text-green-700 hover:opacity-[1] opacity-[0.8]'>
                                     <Link href="/home6">
                                         <a className='cursor-pointer' >
                                             <h3 className='text-sm font-medium capitalize'>Home Six</h3>
@@ -152,51 +152,52 @@ const Header = () => {
                     <div className='absolute z-40 w-[20rem] hidden group-hover:flex  group-hover:pointer-events-auto flex-col flex-wrap  left-0 top-[52px] bg-zinc-50 bg-opacity-100 shadow-lg opacity-0 group-hover:opacity-100 group-hover:visible transition-all duration-300'>
 
                         <div className='flex flex-col justify-between gap-3 items-start p-7'>
-                            <h3 className='text-sm font-medium capitalize border-b-2'>Product Details</h3>
+                            <h3 className='text-[15px] font-medium capitalize border-b-2'>Product Details</h3>
                             <ul>
-                                <li className='mb-2 text-sm capitalize hover:font-medium hover:opacity-[1] opacity-[0.8]'>
+                                <li className='mb-2 text-sm capitalize hover:font-medium  hover:text-green-700 hover:opacity-[1] opacity-[0.8] '>
                                     <Link href="/products">
-                                        <a className='cursor-pointer'>
-                                            <h3 className='text-sm font-medium capitalize'> Shop</h3>
+                                        <a className='cursor-pointer '>
+                                            <h3 className='text-sm font-medium capitalize '> Shop</h3>
                                         </a>
                                     </Link>
                                 </li>
-                                <li className='mb-2 text-sm capitalize hover:font-medium hover:opacity-[1] opacity-[0.8]'>
+                                <li className='mb-2 text-sm capitalize hover:font-medium hover:text-green-700 hover:opacity-[1] opacity-[0.8]'>
                                     <Link href="/product-details/3">
                                         <a className='cursor-pointer' >
                                             <h3 className='text-sm font-medium capitalize'>Product Details One</h3>
+
                                         </a>
                                     </Link>
                                 </li>
-                                <li className='mb-2 text-sm capitalize hover:font-medium hover:opacity-[1] opacity-[0.8]'>
-                                    <Link href="/product-details2/2">
+                                <li className='mb-2 text-sm capitalize hover:font-medium hover:text-green-700 hover:opacity-[1] opacity-[0.8]'>
+                                    <Link href="/product-details2/27">
                                         <a className='cursor-pointer' >
                                             <h3 className='text-sm font-medium capitalize'> Product Details Two</h3>
                                         </a>
                                     </Link>
                                 </li>
-                                <li className='mb-2 text-sm capitalize hover:font-medium hover:opacity-[1] opacity-[0.8]'>
+                                <li className='mb-2 text-sm capitalize hover:font-medium hover:text-green-700 hover:opacity-[1] opacity-[0.8]'>
                                     <Link href="/product-details1/1">
                                         <a className='cursor-pointer' >
                                             <h3 className='text-sm font-medium capitalize'> Product Details Three</h3>
                                         </a>
                                     </Link>
                                 </li>
-                                <li className='mb-2 text-sm capitalize hover:font-medium hover:opacity-[1] opacity-[0.8]'>
+                                <li className='mb-2 text-sm capitalize hover:font-medium hover:text-green-700 hover:opacity-[1] opacity-[0.8]'>
                                     <Link href="/ProductsRTL">
                                         <a className='cursor-pointer' >
                                             <h3 className='text-sm font-medium capitalize'> shop-grid-RTL</h3>
                                         </a>
                                     </Link>
                                 </li>
-                                <li className='mb-2 text-sm capitalize hover:font-medium hover:opacity-[1] opacity-[0.8]'>
+                                <li className='mb-2 text-sm capitalize hover:font-medium hover:text-green-700 hover:opacity-[1] opacity-[0.8]'>
                                     <Link href="/shop-grid-three-column">
                                         <a className='cursor-pointer' >
                                             <h3 className='text-sm font-medium capitalize'>shop-grid-three-column</h3>
                                         </a>
                                     </Link>
                                 </li>
-                                <li className='mb-2 text-sm capitalize hover:font-medium hover:opacity-[1] opacity-[0.8]'>
+                                <li className='mb-2 text-sm capitalize hover:font-medium hover:text-green-700 hover:opacity-[1] opacity-[0.8]'>
                                     <Link href="/shop-grid-five-column">
                                         <a className='cursor-pointer' >
                                             <h3 className='text-sm font-medium capitalize'>shop-grid-five-column</h3>
@@ -219,49 +220,160 @@ const Header = () => {
                         <span className="absolute left-0 -bottom-1 w-0 h-[2.5px] bg-green-500 transition-all duration-300 group-hover:w-full"></span>
                     </a>
                     <div className="absolute inset-x-0 top-full h-[28px] bg-transparent group-hover:block"></div>
-                    <div className='absolute z-40 w-[20rem] hidden group-hover:flex  group-hover:pointer-events-auto flex-col flex-wrap  left-0 top-[52px] bg-zinc-50 bg-opacity-100 shadow-lg opacity-0 group-hover:opacity-100 group-hover:visible transition-all duration-300'>
+                    <div className='absolute z-40 w-[35rem] hidden group-hover:flex  group-hover:pointer-events-auto flex-col flex-wrap h-[30rem] left-0 top-[52px] bg-zinc-50 bg-opacity-100 shadow-lg opacity-0 group-hover:opacity-100 group-hover:visible transition-all duration-300'>
 
                         <div className='flex flex-col justify-between gap-3 items-start p-7'>
+                            <h3 className='text-[15px] font-medium capitalize border-b-2 '> User Panel</h3>
                             <ul className=''>
-                                <li className='mb-2 text-sm capitalize hover:font-medium hover:opacity-[1] opacity-[0.8]'>
-                                    <Link href="/dashboard">
-                                        <a className='cursor-pointer'>
-                                            <h3 className='text-sm font-medium cursor-pointer capitalize'>Dashboard</h3>
-                                        </a>
-                                    </Link>
-                                </li>
-                                <li className='mb-2 text-sm capitalize hover:font-medium hover:opacity-[1] opacity-[0.8]'>
+                                <li className='mb-2 text-sm capitalize hover:font-medium hover:text-green-700 hover:opacity-[1] opacity-[0.8]'>
                                     <Link href="/cart">
                                         <a className='cursor-pointer'>
                                             <h3 className='text-sm font-medium capitalize'>Cart</h3>
                                         </a>
                                     </Link>
                                 </li>
-                                <li className='mb-2 text-sm capitalize hover:font-medium hover:opacity-[1] opacity-[0.8]'>
+                                <li className='mb-2 text-sm capitalize hover:font-medium hover:text-green-700 hover:opacity-[1] opacity-[0.8]'>
                                     <Link href='/watchlist'>
                                         <a className='cursor-pointer'>
                                             <h3 className='text-sm font-medium capitalize'> Watch List</h3>
                                         </a>
                                     </Link>
                                 </li>
-                                <li className='mb-2 text-sm capitalize hover:font-medium hover:opacity-[1] opacity-[0.8]'>
+
+                                <li className='mb-2 text-sm capitalize hover:font-medium hover:text-green-700 hover:opacity-[1] opacity-[0.8]'>
                                     <Link href="/compare">
                                         <a className='cursor-pointer'>
                                             <h3 className='text-sm font-medium capitalize'>Compare Products</h3>
                                         </a>
                                     </Link>
                                 </li>
-                                <li className='mb-2 text-sm capitalize hover:font-medium hover:opacity-[1] opacity-[0.8]'>
-                                    <Link href='/dashboard'>
+                                <li className='mb-2 text-sm capitalize hover:font-medium hover:text-green-700 hover:opacity-[1] opacity-[0.8]'>
+                                    <Link href='/checkout'>
                                         <a className='cursor-pointer'>
-                                            <h3 className='text-sm font-medium capitalize'>Account</h3>
+                                            <h3 className='text-sm font-medium capitalize'>Checkout</h3>
                                         </a>
                                     </Link>
                                 </li>
-                                <li className='mb-2 text-sm capitalize hover:font-medium hover:opacity-[1] opacity-[0.8]'>
+                                <li className='mb-2 text-sm capitalize hover:font-medium hover:text-green-700 hover:opacity-[1] opacity-[0.8]'>
+                                    <Link href='/orders'>
+                                        <a className='cursor-pointer'>
+                                            <h3 className='text-sm font-medium capitalize'>Orders</h3>
+                                        </a>
+                                    </Link>
+                                </li>
+                                <li className='mb-2 text-sm capitalize hover:font-medium hover:text-green-700 hover:opacity-[1] opacity-[0.8]'>
+                                    <Link href='/invoice'>
+                                        <a className='cursor-pointer'>
+                                            <h3 className='text-sm font-medium capitalize'>Invoice</h3>
+                                        </a>
+                                    </Link>
+                                </li>
+                                <li className='mb-2 text-sm capitalize hover:font-medium hover:text-green-700 hover:opacity-[1] opacity-[0.8]'>
+                                    <Link href='/login'>
+                                        <a className='cursor-pointer'>
+                                            <h3 className='text-sm font-medium capitalize'>Sign In</h3>
+                                        </a>
+                                    </Link>
+                                </li>
+                                <li className='mb-2 text-sm capitalize hover:font-medium hover:text-green-700 hover:opacity-[1] opacity-[0.8]'>
+                                    <Link href='/register'>
+                                        <a className='cursor-pointer'>
+                                            <h3 className='text-sm font-medium capitalize'>Sign Up</h3>
+                                        </a>
+                                    </Link>
+                                </li>
+                                <li className='mb-2 text-sm capitalize hover:font-medium hover:text-green-700 hover:opacity-[1] opacity-[0.8]'>
+                                    <Link href='/forgot-password'>
+                                        <a className='cursor-pointer'>
+                                            <h3 className='text-sm font-medium capitalize'>Forgot Password</h3>
+                                        </a>
+                                    </Link>
+                                </li>
+                                <li className='mb-2 text-sm capitalize hover:font-medium hover:text-green-700 hover:opacity-[1] opacity-[0.8]'>
+
+                                    <Link href="/dashboard">
+                                        <a className='cursor-pointer'>
+                                            <h3 className='text-sm font-medium cursor-pointer capitalize'>User Dashboard</h3>
+                                        </a>
+                                    </Link>
+                                </li>
+
+                                <li className='mb-2 text-sm capitalize hover:font-medium hover:text-green-700 hover:opacity-[1] opacity-[0.8]'>
+                                    <Link href='/profiles'>
+                                        <a className='cursor-pointer'>
+                                            <h3 className='text-sm font-medium capitalize'>User Profile</h3>
+                                        </a>
+                                    </Link>
+                                </li>
+                                <li className='mb-2 text-sm capitalize hover:font-medium hover:text-green-700 hover:opacity-[1] opacity-[0.8]'>
+                                    <Link href='/update-profile'>
+                                        <a className='cursor-pointer'>
+                                            <h3 className='text-sm font-medium capitalize'>Update Profile</h3>
+                                        </a>
+                                    </Link>
+                                </li>
+                                <li className='mb-2 text-sm capitalize hover:font-medium hover:text-green-700 hover:opacity-[1] opacity-[0.8]'>
+                                    <Link href='/address'>
+                                        <a className='cursor-pointer'>
+                                            <h3 className='text-sm font-medium capitalize'>Multiple Address</h3>
+                                        </a>
+                                    </Link>
+                                </li>
+
+                                <li className='mb-2 text-sm capitalize hover:font-medium hover:text-green-700 hover:opacity-[1] opacity-[0.8]'>
                                     <Link href='/shipping-address'>
                                         <a className='cursor-pointer' >
                                             <h3 className='text-sm font-medium capitalize'>Shipping Address</h3>
+                                        </a>
+                                    </Link>
+                                </li>
+                                <li className='mt-3 border-b-[1px] border-zinc-500'></li>
+                            </ul>
+                        </div>
+                        <div className='flex flex-col justify-start gap-3 items-start p-7'>
+                            <h3 className='text-[15px] font-medium capitalize border-b-2 '>Admin & Info</h3>
+                            <ul className=''>
+
+                                <li className='mb-2 text-sm capitalize hover:font-medium hover:text-green-700 hover:opacity-[1] opacity-[0.8]'>
+                                    <Link href='/admin'>
+                                        <a className='cursor-pointer'>
+                                            <h3 className='text-sm font-medium capitalize'>Admin Dashboard</h3>
+                                        </a>
+                                    </Link>
+                                </li>
+
+                                <li className='mb-2 text-sm capitalize hover:font-medium hover:text-green-700 hover:opacity-[1] opacity-[0.8]'>
+                                    <Link href='/analytics'>
+                                        <a className='cursor-pointer'>
+                                            <h3 className='text-sm font-medium capitalize'>Analytics</h3>
+                                        </a>
+                                    </Link>
+                                </li>
+                                <li className='mb-2 text-sm capitalize hover:font-medium hover:text-green-700 hover:opacity-[1] opacity-[0.8]'>
+                                    <Link href='/privacy'>
+                                        <a className='cursor-pointer'>
+                                            <h3 className='text-sm font-medium capitalize'>Privacy Policy</h3>
+                                        </a>
+                                    </Link>
+                                </li>
+                                <li className='mb-2 text-sm capitalize hover:font-medium hover:text-green-700 hover:opacity-[1] opacity-[0.8]'>
+                                    <Link href='/faq'>
+                                        <a className='cursor-pointer'>
+                                            <h3 className='text-sm font-medium capitalize'>FAQ</h3>
+                                        </a>
+                                    </Link>
+                                </li>
+                                <li className='mb-2 text-sm capitalize hover:font-medium hover:text-green-700 hover:opacity-[1] opacity-[0.8]'>
+                                    <Link href='/about-us'>
+                                        <a className='cursor-pointer'>
+                                            <h3 className='text-sm font-medium capitalize'>About US</h3>
+                                        </a>
+                                    </Link>
+                                </li>
+                                <li className='mb-2 text-sm capitalize hover:font-medium hover:text-green-700 hover:opacity-[1] opacity-[0.8]'>
+                                    <Link href='/contact-us'>
+                                        <a className='cursor-pointer' >
+                                            <h3 className='text-sm font-medium capitalize'>Contact Us</h3>
                                         </a>
                                     </Link>
                                 </li>
@@ -281,10 +393,10 @@ const Header = () => {
                     <div className='absolute z-40 w-[50rem] hidden group-hover:flex  group-hover:pointer-events-auto flex-col flex-wrap h-[25rem] left-0 top-[52px] bg-zinc-50 bg-opacity-100 shadow-lg opacity-0 group-hover:opacity-100 group-hover:visible transition-all duration-300'>
                         {fashion.map((item, index) => (
                             <div key={index} className='flex flex-col w-1/4 justify-between gap-3 items-start p-7' >
-                                <h3 className='text-sm font-medium capitalize border-b-2 '>{item.title}</h3>
+                                <h3 className='text-[15px] font-medium capitalize border-b-2 '>{item.title}</h3>
                                 <ul className=''>
                                     {item.category.map((cat, i) => (
-                                        <li key={i} className='mb-2 text-sm capitalize hover:font-medium hover:opacity-[1] opacity-[0.8]'>
+                                        <li key={i} className='mb-2 text-sm capitalize hover:font-medium hover:text-green-700 hover:opacity-[1] opacity-[0.8]'>
                                             <a className='cursor-pointer' href={cat.url}>
                                                 <h3 className='text-sm font-medium capitalize'> {cat}</h3>
                                             </a>
@@ -404,7 +516,7 @@ const Header = () => {
                     <div className="absolute inset-x-0 top-full h-[28px] bg-transparent group-hover:block"></div>
                     <div className='absolute z-40 hidden group-hover:flex  w-[10rem] top-[52px]  group-hover:pointer-events-auto flex-col flex-wrap h-auto -right-[75px] bg-zinc-50 bg-opacity-100 shadow-lg opacity-0 group-hover:opacity-100 group-hover:visible transition-all duration-300 '>
                         <ul className='flex flex-col w-full justify-between  items-start  text-sm font-medium capitalize'>
-                            <Link href="/dashboard" >
+                            <Link href="/admin" >
                                 <li className="block hover:bg-zinc-100 hover:border-2 cursor-pointer p-2 w-full">Dashboard</li>
                             </Link>
                             <Link href="/orders" >

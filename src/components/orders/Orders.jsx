@@ -86,9 +86,9 @@ const OrdersPage = () => {
             {isMobile && (
                 <button
                     onClick={toggleSidebar}
-                    className="fixed z-50 top-4 left-4 p-2 rounded-md bg-gray-800 text-white"
+                    className="fixed z-50 top-24 left-4 p-2 rounded-md text-gray-800 bg-white"
                 >
-                    {isSidebarOpen ? <FiX size={24} /> : <FiMenu size={24} />}
+                    {isSidebarOpen ? <FiX size={20} /> : <FiMenu size={20} />}
                 </button>
             )}
 

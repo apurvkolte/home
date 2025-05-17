@@ -29,39 +29,39 @@ const Footer = () => {
                     <ul className="space-y-2">
                         <ul className="footer-social flex justify-start gap-4  ">
                             <li>
-                                <a
-                                    href="javascript:void(0)" onClick={(e) => { e.preventDefault(); }}
-                                    className="flex items-center justify-center w-10 h-10 bg-blue-600 text-white rounded-full transition-transform hover:scale-150 hover:bg-blue-800 shadow-md custom-glow"
+                                <div
+                                    onClick={(e) => { e.preventDefault(); }}
+                                    className="flex items-center cursor-pointer justify-center w-10 h-10 bg-blue-600 text-white rounded-full transition-transform hover:scale-150 hover:bg-blue-800 shadow-md custom-glow"
                                 >
                                     <FaFacebookF className="text-lg font-bold" />
-                                </a>
+                                </div>
                             </li>
 
                             <li>
-                                <a
-                                    href="javascript:void(0)" onClick={(e) => { e.preventDefault(); }}
-                                    className="flex items-center justify-center w-10 h-10 bg-green-500 text-white rounded-full transition-transform hover:scale-150 hover:bg-green-700 shadow-md custom-glow"
+                                <div
+                                    onClick={(e) => { e.preventDefault(); }}
+                                    className="flex items-center cursor-pointer justify-center w-10 h-10 bg-green-500 text-white rounded-full transition-transform hover:scale-150 hover:bg-green-700 shadow-md custom-glow"
                                 >
                                     <FaWhatsapp className="text-lg font-bold" />
-                                </a>
+                                </div>
                             </li>
 
                             <li>
-                                <a
-                                    href="javascript:void(0)" onClick={(e) => { e.preventDefault(); }}
-                                    className="flex items-center justify-center w-10 h-10 bg-gradient-to-r from-pink-500 to-orange-400 text-white rounded-full transition-transform hover:scale-150 hover:from-pink-600 hover:to-orange-500 shadow-md custom-glow"
+                                <div
+                                    onClick={(e) => { e.preventDefault(); }}
+                                    className="flex items-center cursor-pointer justify-center w-10 h-10 bg-gradient-to-r from-pink-500 to-orange-400 text-white rounded-full transition-transform hover:scale-150 hover:from-pink-600 hover:to-orange-500 shadow-md custom-glow"
                                 >
                                     <FaInstagram className="text-lg font-bold" />
-                                </a>
+                                </div>
                             </li>
 
                             <li>
-                                <a
-                                    href="javascript:void(0)" onClick={(e) => { e.preventDefault(); }}
-                                    className="flex items-center justify-center w-10 h-10 bg-blue-700 text-white rounded-full transition-transform hover:scale-150 hover:bg-blue-900 shadow-md custom-glow"
+                                <div
+                                    onClick={(e) => { e.preventDefault(); }}
+                                    className="flex items-center cursor-pointer justify-center w-10 h-10 bg-blue-700 text-white rounded-full transition-transform hover:scale-150 hover:bg-blue-900 shadow-md custom-glow"
                                 >
                                     <FaLinkedinIn className="text-lg font-bold" />
-                                </a>
+                                </div>
                             </li>
                         </ul>
 
@@ -73,13 +73,12 @@ const Footer = () => {
                     <ul className="space-y-3">
                         {['Electronics', 'Photography', 'Lifestyle', 'Home & Kitchen', 'Fitness', 'Accessories'].map((item) => (
                             <li key={item}>
-                                <a
-                                    href={`javascript:void(0)`}
-                                    className="text-gray-600 hover:text-green-500 transition-colors duration-300 flex items-center"
+                                <div
+                                    className="text-gray-600 cursor-pointer hover:text-green-500 transition-colors duration-300 flex items-center"
                                 >
                                     <span className="w-1.5 h-1.5 bg-green-400 rounded-full mr-3"></span>
                                     {item}
-                                </a>
+                                </div>
                             </li>
                         ))}
                     </ul>
@@ -97,13 +96,12 @@ const Footer = () => {
                             { name: 'About Us', link: '/about-us' }
                         ].map((item) => (
                             <li key={item.name}>
-                                <a
-                                    href={`${item.link}`}
-                                    className="text-gray-600 hover:text-green-500 transition-colors duration-300 flex items-center"
+                                <div
+                                    className="text-gray-600 cursor-pointer hover:text-green-500 transition-colors duration-300 flex items-center"
                                 >
                                     <span className="w-1.5 h-1.5 bg-green-400 rounded-full mr-3"></span>
                                     {item.name}
-                                </a>
+                                </div>
                             </li>
                         ))}
                     </ul>
@@ -118,9 +116,9 @@ const Footer = () => {
                             </div>
                             <div>
                                 <p className="text-gray-600">Customer Service</p>
-                                <a href="javascript:void(0)" className="text-gray-800 hover:text-green-500 transition-colors duration-300 font-medium">
+                                <div className="text-gray-800 cursor-pointer hover:text-green-500 transition-colors duration-300 font-medium">
                                     +1 (800) 123-4567
-                                </a>
+                                </div>
                             </div>
                         </div>
 
@@ -130,9 +128,9 @@ const Footer = () => {
                             </div>
                             <div>
                                 <p className="text-gray-600">Email Address</p>
-                                <a href="javascript:void(0)" className="text-gray-800 hover:text-green-500 transition-colors duration-300 font-medium">
+                                <div className="text-gray-800 cursor-pointer hover:text-green-500 transition-colors duration-300 font-medium">
                                     contact@company.com
-                                </a>
+                                </div>
                             </div>
                         </div>
 
@@ -156,12 +154,12 @@ const Footer = () => {
             <div className="mt-16 pt-8 border-t border-gray-200">
                 <div className="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
                     <p className="text-gray-500 text-sm mb-4 md:mb-0">
-                        © {new Date().getFullYear()} <span className="text-green-500 font-medium">Florish</span>. All rights reserved.
+                        © {new Date().getFullYear()} <span className="text-green-500 font-medium cursor-pointer">Florish</span>. All rights reserved.
                     </p>
                     <div className="flex space-x-6">
-                        <a href="javascript:void(0)" className="text-gray-500 hover:text-green-500 transition-colors duration-300 text-sm">Privacy Policy</a>
-                        <a href="javascript:void(0)" className="text-gray-500 hover:text-green-500 transition-colors duration-300 text-sm">Terms of Service</a>
-                        <a href="javascript:void(0)" className="text-gray-500 hover:text-green-500 transition-colors duration-300 text-sm">Cookies</a>
+                        <div className="text-gray-500 cursor-pointer hover:text-green-500 transition-colors duration-300 text-sm">Privacy Policy</div>
+                        <div className="text-gray-500 cursor-pointer hover:text-green-500 transition-colors duration-300 text-sm">Terms of Service</div>
+                        <div className="text-gray-500 cursor-pointer hover:text-green-500 transition-colors duration-300 text-sm">Cookies</div>
                     </div>
                 </div>
             </div>

@@ -23,8 +23,10 @@ const Shipping = () => {
     };
 
     return (
-        <div className="container mx-auto py-32">
-            <h1 className="text-2xl font-extrabold tracking-tight text-gray-700 text-center mb-6">Shipping Address</h1>
+        <div className="container mx-auto py-32 bg-[#F8F8F8]">
+            <h1 className="text-2xl sm:text-4xl font-bold text-gray-800 text-center mb-6">Shipping Address</h1>
+            <div className="w-20 h-1 bg-blue-600 rounded mx-auto mb-6"></div>
+
             <div className="flex justify-center items-center">
                 <div className="w-full lg:w-1/2 bg-white shadow-lg p-6 rounded-2xl border border-gray-200">
                     <form onSubmit={handleSubmit(submitHandler)}>
@@ -92,7 +94,7 @@ const Shipping = () => {
                                 type="submit"
                                 className="w-1/2 bg-green-500 text-white py-2 rounded-lg font-semibold text-lg hover:bg-green-600 transition duration-300"
                             >
-                                Continue
+                                Checkout
                             </button>
                         </div>
                     </form>

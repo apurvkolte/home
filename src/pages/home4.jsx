@@ -97,7 +97,7 @@ const Home = () => {
             {/* Categories */}
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
                 <h2 className="text-2xl font-bold text-gray-900 mb-8">Shop by Category</h2>
-                <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-5">
+                <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-5 cursor-pointer">
                     {categories.map((category) => (
                         <div key={category.name} className="group relative bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-200">
                             <div className="p-6 text-center">

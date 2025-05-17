@@ -12,7 +12,7 @@ const Cards = () => {
         : products.filter(product => product.category.trim().toLowerCase() === selectedCategory.trim().toLowerCase());
 
     return (
-        <div className='max-w-screen-xl mx-auto h-auto px-4'>
+        <div className='max-w-screen-xl mx-auto h-auto px-2 sm:px-4'>
             <h1 className='text-4xl font-normal py-6 tracking-tight leading-none capitalize text-center sm:text-left'>
                 <motion.span
                     initial={{ rotate: 90, y: "40%", opacity: 0 }}

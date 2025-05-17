@@ -5,8 +5,11 @@ import { FiAward, FiTarget, FiGlobe } from 'react-icons/fi';
 const AboutUs = () => {
     return (
         <div className="container mx-auto p-8">
+
             <section className="text-gray-700 body-font">
                 <div className="container mx-auto flex flex-col px-5 py-24 items-center">
+                    <h1 className="text-2xl sm:text-4xl font-bold text-gray-800 mb-4">About Us</h1>
+                    <div className="w-20 h-1 bg-blue-600 rounded mx-auto mb-6"></div>
                     <div className="lg:w-4/6 mx-auto">
                         <div className="rounded-lg h-64 overflow-hidden shadow-lg transform transition duration-500 hover:scale-105">
                             <img
@@ -31,8 +34,8 @@ const AboutUs = () => {
                                     </p>
                                 </div>
                             </div>
-                            <div className="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
-                                <p className="leading-relaxed text-lg mb-4 text-gray-600">
+                            <div className="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-left">
+                                <p className="leading-relaxed text-lg mb-4  text-gray-600">
                                     At our core, we believe in creating meaningful solutions that make a difference. Our team combines expertise with passion to deliver outstanding results for our clients. We foster a culture of collaboration and continuous learning.
                                 </p>
                                 <p className="leading-relaxed text-lg mb-4 text-gray-600">

@@ -40,7 +40,7 @@ const MovableZoomImage = ({ mainImage }) => {
                 height: '500px',
                 overflow: 'hidden',
                 margin: 'auto',
-                background: '#F8F9FA',
+                // background: '#F8F9FA',
             }}
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}

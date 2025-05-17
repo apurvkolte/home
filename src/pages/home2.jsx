@@ -23,7 +23,7 @@ const Home1 = () => {
     }, []);
     return (
         <div className="w-full min-h-screen scroll-smooth">
-            <Seo pageTitle="Florish - eCommerce Next.js, React Template" />
+            <Seo pageTitle="Florish - React eCommerce Template with Next.js, Redux, Tailwind CSS & Dual Panel System" />
 
             <div className="relative bg-white z-50">
                 {loading && <Loader />}
@@ -33,7 +33,7 @@ const Home1 = () => {
                 <Banner1 />
                 <CategoriesPage />
 
-                <div className='container px-20 mx-auto '>
+                <div className='container sm:px-20 mx-auto bg-[#F8F8F8]'>
                     <ImageSlider1 />
                     <Cards />
                 </div>

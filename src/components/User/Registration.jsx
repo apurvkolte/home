@@ -141,14 +141,12 @@ const Signup = () => {
                     </div>
                 </form>
                 <div className="flex justify-center items-center mt-6">
-                    <Link
-                        href="/login"
+                    <div
                         className="text-gray-700 hover:text-green-500 font-medium transition-colors duration-200 ease-in-out"
                     >
-                        <> Already have an account? <span className="font-bold">Sign In</span></>
-                    </Link>
+                        <> Already have an account? <Link href="/login" className="font-bold">Sign In</Link></>
+                    </div>
                 </div>
-
 
             </div>
         </div>

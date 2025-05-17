@@ -87,6 +87,27 @@
 
 }
 
+
+@media (max-width: 768px) {
+
+    .slick-prev:before,
+    .slick-next:before {
+        font-size: 24px !important;
+        width: 36px;
+        height: 72px;
+        top: calc(50% - 36px);
+        background-color: hsla(0, 0%, 100%, 0.9);
+    }
+
+    .slick-prev:before {
+        left: 5px;
+    }
+
+    .slick-next:before {
+        right: 5px;
+    }
+}
+
 .slick-next:before:hover,
 .slick-prev:before:hover {
     box-shadow: 1px 2px 10px 1px rgb(0 0 0 / 30%);

@@ -23,7 +23,8 @@ const Home = () => {
 
     return (
         <div className="w-full min-h-screen scroll-smooth">
-            <Seo pageTitle="Florish - eCommerce Next.js, React Template" />
+            <Seo pageTitle="Florish - React Ecommerce Template with React Hooks, Redux, Next JS, Admin Panel & Tailwind CSS" />
+
             <div className="relative bg-white z-50">
                 {loading && <Loader />}
                 <Header />

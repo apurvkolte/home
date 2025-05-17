@@ -21,7 +21,7 @@ const ComparePage = () => {
     }
 
     return (
-        <div className="max-w-screen-xl mx-auto  py-32">
+        <div className="max-w-screen-xl mx-auto px-5 sm:px-0  py-32">
             <div className="flex justify-between items-center mb-8">
                 <h1 className="text-3xl font-bold">Compare Products</h1>
                 <Link href="/" className="text-blue-600 hover:text-blue-800 flex items-center">
